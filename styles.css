@@ -1,0 +1,188 @@
+body {
+    background-image: linear-gradient(#333e42, #568da3);
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#mainContainer {
+    width: 75%;
+    margin:20px auto;
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    background-color: #d4ab61;
+    background-image: linear-gradient(#f3d191, #d4ab61);
+    padding:10px;
+    padding-bottom:30px;
+    align-items: center;
+    align-content: center;
+    border: 5px solid ;
+    border-top-color: #e0ba97;
+    border-right-color: #e0ba97;
+    border-bottom-color: #a5805e;
+    border-left-color: #a5805e;
+    box-shadow: -6px 8px 8px rgba(0, 0, 0, 0.3) ;
+}
+
+h1 {
+    color: #8d2020;
+    font-size: 2em;
+    padding-bottom:10px;
+}
+
+#hz {
+  width:90%;
+  height: 1px;
+  border: 2px solid ;
+  border-bottom-color: #e0ba97;
+  border-left-color: #e0ba97;
+  border-top-color: #a5805e;
+  border-right-color: #a5805e;
+}
+
+p {
+  width:70%;
+}
+
+#numberInput {
+    width: 60%;
+    height: 2rem;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    background-color: #ffe4c4;
+    color: #8d2020;  
+    border: 3px solid ;
+    border-bottom-color: #eec49c;
+    border-left-color: #eec49c;
+    border-top-color: #a5805e;
+    border-right-color: #a5805e;
+    margin-bottom: 20px;
+}
+
+#numberInput::placeholder {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: #8d2020; 
+}
+
+#outputContainer {
+    border: 8px solid;
+    width: 90%;
+    height: 100px;
+    margin:10px auto; 
+    font-size: 3.5rem;
+    background-color: #ffe4c4;
+    border-top-color: #fdf5ec;
+    border-right-color: #fdf5ec;
+    border-bottom-color: #d8be9e;
+    border-left-color: #d8be9e;
+    box-shadow: -2px 4px 2px rgba(0, 0, 0, 0.4) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    
+}
+
+#output {
+    font-family: 'Times New Roman', Times, serif; 
+    color: #8d2020;
+    text-shadow: 2px -2px 1px #d8be9e, -2px 2px 0px #fdf5ec;
+}
+
+form {
+  width:90%;
+}
+
+button {
+  background-color:#8d2020;
+  color: #ffe4c4;
+  border: 0;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+/*  SLIDER  */
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 60%;
+  }
+  
+  /* Removes default focus */
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  /******** Chrome, Safari, Opera and Edge Chromium styles ********/
+  /* slider track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #ffe4c4;
+    border-radius: 0rem;
+    height: 1rem;
+    border: 3px solid ;
+    border-bottom-color: #eec49c;
+    border-left-color: #eec49c;
+    border-top-color: #a5805e;
+    border-right-color: #a5805e;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -4px; /* Centers thumb on the track */
+    background-color: #8d2020;
+    border-radius: 0rem;
+    border: 3px solid ;
+    border-bottom-color: #610e0e;
+    border-left-color: #610e0e;
+    border-top-color: #b95e5e;
+    border-right-color: #b95e5e;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 0.5px solid #b95e5e;
+    outline-offset: 0.125rem;
+  }
+  
+  /*********** Firefox styles ***********/
+  /* slider track */
+  input[type="range"]::-moz-range-track {
+    background-color: #ffe4c4;
+    border-radius: 0rem;
+    height: 1rem;
+    border: 3px solid ;
+    border-bottom-color: #eec49c;
+    border-left-color: #eec49c;
+    border-top-color: #a5805e;
+    border-right-color: #a5805e;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-moz-range-thumb {
+    background-color: #8d2020;
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 0rem;
+    border: 3px solid ;
+    border-bottom-color: #610e0e;
+    border-left-color: #610e0e;
+    border-top-color: #b95e5e;
+    border-right-color: #b95e5e;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  input[type="range"]:focus::-moz-range-thumb{
+    outline: 0.5px solid #b95e5e;
+    outline-offset: 0.125rem;
+  }
