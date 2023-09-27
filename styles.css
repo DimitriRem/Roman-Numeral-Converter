@@ -10,13 +10,11 @@ body {
     display:flex;
     flex-direction: column;
     text-align:center;
-    background-color: #d4ab61;
-    background-image: linear-gradient(#f3d191, #d4ab61);
+    background-color: #f3d191;
     padding:10px;
     padding-bottom:30px;
     align-items: center;
     align-content: center;
-    border: 5px solid ;
     border-top-color: #e0ba97;
     border-right-color: #e0ba97;
     border-bottom-color: #a5805e;
@@ -33,7 +31,7 @@ h1 {
 #hz {
   width:90%;
   height: 1px;
-  border: 2px solid ;
+  border: 1px solid ;
   border-bottom-color: #e0ba97;
   border-left-color: #e0ba97;
   border-top-color: #a5805e;
@@ -201,5 +199,13 @@ input[type="range"] {
     input[type="range"] {
       padding: 30px 0 50px 0;
       width: 90%;
+    }
+
+    #numberInput {
+      font-size: 1rem;
+    }
+  
+  #numberInput::placeholder {
+      font-size: 1rem;
     }
   }
