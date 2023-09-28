@@ -1,26 +1,21 @@
 body {
-    background-image: linear-gradient(#333e42, #568da3);
-    height: 100vh;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#mainContainer {
-    width: 75%;
-    margin:20px auto;    
-    text-align:center;
-    background-color: #f3d191;
-    padding:10px;
-    padding-bottom:30px;
-    border-radius: 8px;
-    box-shadow: -6px 8px 8px rgba(0, 0, 0, 0.3) ;
+  background-image: linear-gradient(45deg, #142132, #3c495b);
+  height: 100%;
+  width: 90%;
+  font-family: "Bitter", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+    margin: 0px;
 }
 
 #subContainerAtoR {
-  display:block;
-  width:95%;
-  background-color: #fdfbef;
-  border-radius:5px;
+  display: block;
+  width: 100%;
+  background-color: #fff4e2;
+  border-radius: 0;
   padding: 10px;
+  color: #3c495b;
+  text-align: center;
+  
 }
 
 form {
@@ -28,288 +23,217 @@ form {
 }
 
 P {
-  margin: auto;
+  margin: 30px auto;
+  color: #3c495b;
 }
 
 #subContainerRtoA {
   display: none;
-  width:95%;
-  background-color: #fdfbef;
-  border-radius:5px;
+  width: 100%;
+  background-color: #fff4e2;
+  border-radius: 0;
   padding: 10px;
+  color: #3c495b;
+  text-align: center;
 }
 
 h1 {
-    color: #8d2020;
-    font-size: 2em;
-    padding-bottom:10px;
+  color: #fff4e2;
+  font-size: 2em;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
 }
-
 
 #conversionSelector {
-  width:90%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-}
-
-button {
-  background-color:#8d2020;
-  color: #ffe4c4;
-  border: 0;
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  flex-grow: 1;
-  margin: 10px 20px;
+  justify-content: space-between;
 }
 
 .button-active {
-  background-color:#fdfbef;
-  color: #8d2020;
+  background-color: #fef3df;
+  color: #3c495b;
   border: 0;
   padding: 5px;
   cursor: pointer;
   border-radius: 5px 5px 0 0;
   flex-grow: 1;
-  margin: 0px 10px;
-  height:25px;
+  height: 25px;
   font-weight: bold;
+  text-align: center;
 }
 
 .button {
-  background-color:#fdfbef85;
-  color: #8d2020;
-  border: 0;
+  background-color: #596677;
+  color: #fef3df;
   padding: 5px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
   flex-grow: 1;
   margin: 0px 10px;
   height: 20px;
+  text-align: center;
 }
 
 .button:hover {
-  background-color:#fdfbef;
-  }
-
-p {
-  width:70%;
-  margin: 20px auto;
+  background-color: #8190a3;
 }
 
-#numberInput {
-    width: 60%;
-    height: 2rem;
-    text-align:center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    background-color: #ffe4c4;
-    color: #8d2020;  
-    border: 3px solid ;
-    border-bottom-color: #eec49c;
-    border-left-color: #eec49c;
-    border-top-color: #a5805e;
-    border-right-color: #a5805e;
-    margin-bottom: 20px;
-    border-radius: 5px;
+.clipboardButton {
+  background-color: #3c495b;
+  font-size: 0.8rem;
+  color: #fff4e2;
+  border: 0;
+  padding: 9px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 10px auto;
+  width: fit-content
 }
 
-#romanInput {
+.clipboardButton:hover {
+  background-color: #8190a3;
+}
+
+.numberInput {
   width: 60%;
   height: 2rem;
-  text-align:center;
-  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-family: "Bitter", "Times New Roman", Times, serif;
   font-size: 1.5rem;
-  background-color: #ffe4c4;
-  color: #8d2020;  
-  border: 3px solid ;
-  border-bottom-color: #eec49c;
-  border-left-color: #eec49c;
-  border-top-color: #a5805e;
-  border-right-color: #a5805e;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  border: 1px solid #142132;
+  background-color:transparent;
+  color:#142132;
+  border-radius: 3px; 
 }
 
-#numberInput::placeholder {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    color: #8d2020; 
-}
-
-#romanInput::placeholder {
-  font-family: 'Times New Roman', Times, serif;
+.numberInput::placeholder {
+  font-family: "Bitter", "Times New Roman", Times, serif;
   font-size: 1.5rem;
-  color: #8d2020; 
+  color: #142132;
 }
 
-#outputContainer {
-    border: 8px solid;
-    width: 85%;
-    height: 100px;
-    margin:10px auto; 
-    font-size: 3.5rem;
-    background-color: #ffe4c4;
-    border-top-color: #fdf5ec;
-    border-right-color: #fdf5ec;
-    border-bottom-color: #d8be9e;
-    border-left-color: #d8be9e;
-    box-shadow: -2px 4px 2px rgba(0, 0, 0, 0.4) ;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    overflow: auto;    
-}
-
-#romanOutputContainer {
-  border: 8px solid;
+.outputContainer {
+  background-image: linear-gradient(45deg, #142132, #3c495b);
+  border: 2px solid;
   width: 85%;
   height: 100px;
-  margin:10px auto; 
-  font-size: 3.5rem;
-  background-color: #ffe4c4;
-  border-top-color: #fdf5ec;
-  border-right-color: #fdf5ec;
-  border-bottom-color: #d8be9e;
-  border-left-color: #d8be9e;
-  box-shadow: -2px 4px 2px rgba(0, 0, 0, 0.4) ;
+  margin: 10px auto;
+  font-size: 2rem;
+  border-radius: 3px;
+  border-top-color: #5c6877;
+  border-right-color: #5c6877;
+  border-bottom-color: #142132;
+  border-left-color: #142132;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  overflow: auto;    
+  overflow: auto;
+  max-width: 100%;
 }
 
-#output {
-    font-family: 'Times New Roman', Times, serif; 
-    color: #8d2020;
-    text-shadow: 2px -2px 1px #d8be9e, -2px 2px 0px #fdf5ec;
+.output {
+  font-family: "Bitter", "Times New Roman", Times, serif;
+  color: #fffaf1;
+  text-shadow: 2px -2px 1px #142132, -2px 2px 0px #4c5c72;
+  display: flex;
+flex-wrap: wrap;
+max-width: 100%;
+font-size: 2rem;
 }
 
-#romanOutput {
-  font-family: 'Times New Roman', Times, serif; 
-  color: #8d2020;
-  text-shadow: 2px -2px 1px #d8be9e, -2px 2px 0px #fdf5ec;
-}
 
 form {
-  width:90%;
+  width: 90%;
 }
-
-
-
 
 /*  SLIDER  */
 /*********** Baseline, reset styles ***********/
 input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-    background: transparent;
-    cursor: pointer;
-    width: 60%;
-    
-  }
-  
-  /* Removes default focus */
-  input[type="range"]:focus {
-    outline: none;
-  }
-  
-  /******** Chrome, Safari, Opera and Edge Chromium styles ********/
-  /* slider track */
-  input[type="range"]::-webkit-slider-runnable-track {
-    background-color: #ffe4c4;
-    border-radius: 0rem;
-    height: 1rem;
-    border: 3px solid ;
-    border-bottom-color: #eec49c;
-    border-left-color: #eec49c;
-    border-top-color: #a5805e;
-    border-right-color: #a5805e;
-    border-radius: 5px;
-  }
-  
-  /* slider thumb */
-  input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    margin-top: -4px; /* Centers thumb on the track */
-    background-color: #8d2020;
-    border-radius: 0rem;
-    border: 3px solid ;
-    border-bottom-color: #610e0e;
-    border-left-color: #610e0e;
-    border-top-color: #b95e5e;
-    border-right-color: #b95e5e;
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 5px;
-  }
-  
-  input[type="range"]:focus::-webkit-slider-thumb {
-    outline: 0.5px solid #b95e5e;
-    outline-offset: 0.125rem;
-  }
-  
-  /*********** Firefox styles ***********/
-  /* slider track */
-  input[type="range"]::-moz-range-track {
-    background-color: #ffe4c4;
-    border-radius: 0rem;
-    height: 1rem;
-    border: 3px solid ;
-    border-bottom-color: #eec49c;
-    border-left-color: #eec49c;
-    border-top-color: #a5805e;
-    border-right-color: #a5805e;
-    border-radius: 5px;
-  }
-  
-  /* slider thumb */
-  input[type="range"]::-moz-range-thumb {
-    background-color: #8d2020;
-    border: none; /*Removes extra border that FF applies*/
-    border-radius: 0rem;
-    border: 3px solid ;
-    border-bottom-color: #610e0e;
-    border-left-color: #610e0e;
-    border-top-color: #b95e5e;
-    border-right-color: #b95e5e;
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 5px;
-  }
-  
-  input[type="range"]:focus::-moz-range-thumb{
-    outline: 0.5px solid #b95e5e;
-    outline-offset: 0.125rem;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 60%;
+  margin: 40px auto;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #142132;
+  height: 1px;
+
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -10px; /* Centers thumb on the track */
+  background-image: linear-gradient(45deg, #142132, #3c495b);
+  background-color: #142132;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0.7rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 0.5px solid #3c495b;
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #142132;
+  height: 1px;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #8d2020;
+  border: none; /*Removes extra border that FF applies*/
+  background-image: linear-gradient(45deg, #142132, #3c495b);
+  background-color: #142132;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0.7rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  outline: 0.5px solid #3c495b;
+  outline-offset: 0.125rem;
+}
+
+@media only screen and (max-width: 500px) {
+  #output {
+    font-size: 2rem;
   }
 
-  @media only screen and (max-width:500px) {
+  #outputContainer {
+    margin-bottom: 20px;
+  }
 
-    #output {
-      font-size: 2rem;
-    }
+  input[type="range"] {
+    padding: 30px 0 50px 0;
+    width: 90%;
+  }
 
-    #outputContainer {
-      
-      margin-bottom: 20px;
-    }
+  #numberInput {
+    font-size: 1rem;
+  }
 
-    input[type="range"] {
-      padding: 30px 0 50px 0;
-      width: 90%;
-    }
-
-    #numberInput {
-      font-size: 1rem;
-    }
-  
   #numberInput::placeholder {
-      font-size: 1rem;
-    }
+    font-size: 1rem;
   }
+}
