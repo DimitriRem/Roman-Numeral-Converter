@@ -30,7 +30,8 @@ numberInput.addEventListener("input", function () {
 
 romanInput.addEventListener("input", function () {
   const romanInputValue = romanInput.value;
-  const pattern = /[I{1,3}|V{1}|X{1,3}|L{1}|C{1,3}|D{1}|M{1,3}|i{1,3}|v{1}|x{1,3}|l{1}|c{1,3}|d{1}|m{1,3}|]/;
+  const pattern =
+    /[I{1,3}|V{1}|X{1,3}|L{1}|C{1,3}|D{1}|M{1,3}|i{1,3}|v{1}|x{1,3}|l{1}|c{1,3}|d{1}|m{1,3}|]/;
 
   if (pattern.test(romanInputValue)) {
     const romanValue = romanInputValue;
@@ -49,7 +50,11 @@ function updateVariable(value) {
 function romanUpdateVariable(value) {
   variable = value;
   romanOutputElement.textContent = convertToArabic(variable);
+  if (romanOutputElement.textContent == "NaN") {
+    romanOutputElement.textContent = "Invalid input";
+  }
 }
+
 
 function copyToClipboard() {
   const text = outputElement.textContent;
